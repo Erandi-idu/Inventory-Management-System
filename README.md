@@ -85,9 +85,8 @@ npm run dev
 cd frontend
 npm install
 npm run dev
-
-👩‍💻 Author
-Erandi Indunil
-GitHub Profile
-LinkedIn Profile
+## 👩‍💻 Author
+**Erandi Indunil**  
+- [GitHub Profile](https://github.com/Erandi-idu)
+- [LinkedIn Profile](https://www.linkedin.com/in/linkedin.com/in/erandi-indunil)
 
