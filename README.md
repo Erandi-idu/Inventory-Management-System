@@ -33,12 +33,11 @@ inventory-system/
 ├── backend/            # Express API & Database Connection
 ├── frontend/           # React App (Vite)
 └── README.md           # Documentation
-
-└── README.md           # Documentation
 ⚙️ Installation & Setup
 1. Database Setup
-Open phpMyAdmin, create a database named inventory_db, and run the following SQL queries:
-
+Open phpMyAdmin, create a database named inventory_db, and run the following SQL queries to create the tables:
+code
+SQL
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL
@@ -64,21 +63,21 @@ CREATE TABLE sales (
 );
 
 INSERT INTO categories (name) VALUES ('Electronics');
-
 2. Backend Setup
-
+Navigate to the backend folder, install dependencies, and start the server.
+code
+Bash
 cd backend
 npm install
-# Create a .env file and add DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, PORT
 npm run dev
-
 3. Frontend Setup
-
+Navigate to the frontend folder, install dependencies, and start the Vite development server.
+code
+Bash
 cd frontend
 npm install
 npm run dev
-
 👩‍💻 Author
 Erandi Indunil
-https://github.com/
-linkedin.com/in/erandi-indunil
+GitHub Profile
+LinkedIn Profile
