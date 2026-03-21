@@ -25,28 +25,20 @@ A professional Full-Stack Inventory and Sales Management System built with **Rea
 - **Framework:** Express.js
 - **Database:** MySQL
 - **Environment Management:** Dotenv
-- **CORS:** Enabled for cross-origin requests
 
 ## 📂 Project Structure
 
 ```text
 inventory-system/
 ├── backend/            # Express API & Database Connection
-│   ├── config/         # DB Connection setup
-│   ├── controllers/    # Business logic (Products & Sales)
-│   ├── routes/         # API Endpoints
-│   └── server.js       # Main Entry point
 ├── frontend/           # React App (Vite)
-│   ├── src/
-│   │   ├── api/        # Axios configuration
-│   │   ├── components/ # Common UI components (Navbar)
-│   │   ├── pages/      # Application Screens
-│   │   └── App.jsx     # Main Router setup
 └── README.md           # Documentation
 
+└── README.md           # Documentation
 ⚙️ Installation & Setup
 1. Database Setup
 Open phpMyAdmin, create a database named inventory_db, and run the following SQL queries:
+
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL
@@ -77,7 +69,7 @@ INSERT INTO categories (name) VALUES ('Electronics');
 
 cd backend
 npm install
-# Create a .env file with your DB details (DB_HOST, DB_USER, etc.)
+# Create a .env file and add DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, PORT
 npm run dev
 
 3. Frontend Setup
@@ -85,8 +77,8 @@ npm run dev
 cd frontend
 npm install
 npm run dev
-## 👩‍💻 Author
-**Erandi Indunil**  
-- [GitHub Profile](https://github.com/Erandi-idu)
-- [LinkedIn Profile](https://www.linkedin.com/in/linkedin.com/in/erandi-indunil)
 
+👩‍💻 Author
+Erandi Indunil
+https://github.com/
+linkedin.com/in/erandi-indunil
