@@ -1,43 +1,30 @@
 # 📦 Inventory & Sales Management System
 
-A professional Full-Stack Inventory and Sales Management System built with **React, Node.js, and MySQL**. This application allows users to manage products, track sales transactions, and monitor stock levels in real-time through an interactive dashboard.
+A professional Full-Stack Inventory and Sales Management System built with **React, Node.js, and MySQL**.
 
 ## 🚀 Key Features
 
-- **Interactive Dashboard:** Real-time overview of total products, total revenue, and low-stock alerts.
-- **Inventory Management:** Full CRUD operations (Create, Read, Update, Delete) for managing products.
-- **Sales Tracking:** Record sales with automatic stock deduction and total price calculation.
-- **Stock Alerts:** Visual indicators for items running low on stock (less than 5 units).
-- **Responsive UI:** Clean, modern, and mobile-friendly interface built with **Tailwind CSS**.
-- **Data Persistence:** Relational database management using **MySQL**.
+- **Dashboard:** Real-time overview of products and sales.
+- **Inventory Management:** Full CRUD operations (Add, View, Update, Delete) for products.
+- **Sales Tracking:** Record sales transactions with automatic stock deduction.
+- **Responsive UI:** Clean and modern interface built with **Tailwind CSS**.
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **Framework:** React.js (Vite)
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide-React
-- **HTTP Client:** Axios
-- **Routing:** React Router DOM
-
-### Backend
-- **Runtime:** Node.js
-- **Framework:** Express.js
+- **Frontend:** React.js, Tailwind CSS, Axios
+- **Backend:** Node.js, Express.js
 - **Database:** MySQL
-- **Environment Management:** Dotenv
 
 ## 📂 Project Structure
 
 ```text
 inventory-system/
-├── backend/            # Express API & Database Connection
+├── backend/            # Express API & MySQL setup
 ├── frontend/           # React App (Vite)
-└── README.md           # Documentation
+└── README.md           # Documentation ```
 ⚙️ Installation & Setup
 1. Database Setup
-Open phpMyAdmin, create a database named inventory_db, and run the following SQL queries to create the tables:
-code
-SQL
+Create a database named inventory_db and run these SQL queries:
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL
@@ -64,16 +51,10 @@ CREATE TABLE sales (
 
 INSERT INTO categories (name) VALUES ('Electronics');
 2. Backend Setup
-Navigate to the backend folder, install dependencies, and start the server.
-code
-Bash
 cd backend
 npm install
 npm run dev
 3. Frontend Setup
-Navigate to the frontend folder, install dependencies, and start the Vite development server.
-code
-Bash
 cd frontend
 npm install
 npm run dev
