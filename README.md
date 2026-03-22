@@ -1,30 +1,29 @@
 # 📦 Inventory & Sales Management System
 
-A professional Full-Stack Inventory and Sales Management System built with **React, Node.js, and MySQL**.
+Full-stack Inventory and Sales Management System built with React, Node.js, and MySQL.
 
 ## 🚀 Key Features
-
-- **Dashboard:** Real-time overview of products and sales.
-- **Inventory Management:** Full CRUD operations (Add, View, Update, Delete) for products.
-- **Sales Tracking:** Record sales transactions with automatic stock deduction.
-- **Responsive UI:** Clean and modern interface built with **Tailwind CSS**.
+- Dashboard with real-time stats
+- Product Add/View/Update/Delete
+- Sales tracking and automatic stock update
+- Responsive UI with Tailwind CSS
 
 ## 🛠️ Tech Stack
-
-- **Frontend:** React.js, Tailwind CSS, Axios
-- **Backend:** Node.js, Express.js
-- **Database:** MySQL
+- Frontend: React.js, Tailwind CSS
+- Backend: Node.js, Express.js
+- Database: MySQL
 
 ## 📂 Project Structure
+- backend: Express API & MySQL setup
+- frontend: React App (Vite)
+- README.md: Documentation
 
-```text
-inventory-system/
-├── backend/            # Express API & MySQL setup
-├── frontend/           # React App (Vite)
-└── README.md           # Documentation ```
-⚙️ Installation & Setup
-1. Database Setup
-Create a database named inventory_db and run these SQL queries:
+## ⚙️ Installation & Setup
+
+### 1. Database Setup
+Open phpMyAdmin, create a database named `inventory_db`, and run these queries:
+
+```sql
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL
@@ -50,15 +49,21 @@ CREATE TABLE sales (
 );
 
 INSERT INTO categories (name) VALUES ('Electronics');
-2. Backend Setup
-cd backend
-npm install
-npm run dev
-3. Frontend Setup
-cd frontend
-npm install
-npm run dev
-👩‍💻 Author
-Erandi Indunil
-GitHub Profile
-LinkedIn Profile
+```
+
+### 2. Backend Setup
+- `cd backend`
+- `npm install`
+- `npm run dev`
+
+### 3. Frontend Setup
+- `cd frontend`
+- `npm install`
+- `npm run dev`
+
+---
+
+## 👩‍💻 Author
+**Erandi Indunil**  
+- [GitHub Profile](https://github.com/Erandi-idu)
+- [LinkedIn Profile](https://www.linkedin.com/in/erandi-indunil)
